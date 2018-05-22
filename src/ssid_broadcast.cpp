@@ -25,7 +25,7 @@ uint8_t connection_info[] = {
 };
 
 
-void send_packet(const char * ssid, uint8_t channel) {
+void send_beacon_frame(const char * ssid, uint8_t channel) {
     uint8_t pkt_buffer[128];
     uint16_t ssid_len = strlen(ssid);
 
@@ -54,24 +54,4 @@ void send_packet(const char * ssid, uint8_t channel) {
     wifi_send_pkt_freedom(pkt_buffer, packet_size, 0);
     wifi_send_pkt_freedom(pkt_buffer, packet_size, 0);
     wifi_send_pkt_freedom(pkt_buffer, packet_size, 0);
-}
-
-void setup() {
-  Serial.begin(115200);
-  wifi_set_opmode(STATION_MODE);
-  wifi_promiscuous_enable(1);
-}
-
-void loop() {
-    // Randomize channel //
-
-
-    for (int i = 0; i < 100; i++) {
-        uint8_t channel = random(1,12);
-        char ssid[10];
-        sprintf(ssid, "DEFAULT%02d", i);
-        ssid[9] = 0;
-        send_packet(ssid, channel);
-        delay(1);
-    }
 }
