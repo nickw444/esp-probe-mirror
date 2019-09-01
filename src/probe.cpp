@@ -1,4 +1,5 @@
 #include "probe.h"
+#include "config.h"
 
 extern "C" {
   #include <user_interface.h>
@@ -73,6 +74,20 @@ static void showMetadata(SnifferPacket *snifferPacket) {
     int end_pos = MIN(ssid_len, MAX_SSID_LENGTH - 1);
     memcpy(dest, ssid, end_pos);
     dest[end_pos] = 0;
+
+    #if PRINT_ON_RECV
+    Serial.printf("%-30s\t%u\t%u\t%d\t",
+      dest,
+      snifferPacket->rx_ctrl.channel,
+      snifferPacket->rx_ctrl.rate,
+      snifferPacket->rx_ctrl.rssi
+    );
+    for (int i = 0; i < 6; i++) {
+        Serial.printf("%02X", snifferPacket->data[4 + 6 + i]);
+        if (i < 5) Serial.print(":");
+    }
+    Serial.println();
+    #endif
   }
 }
 

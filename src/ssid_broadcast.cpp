@@ -36,12 +36,12 @@ void send_beacon_frame(const char * ssid, uint8_t channel) {
     memcpy(pkt_buffer + sizeof header + ssid_len, connection_info, sizeof connection_info);
 
     // Set BSSID to random
-    pkt_buffer[10] = pkt_buffer[16] = random(256);
-    pkt_buffer[11] = pkt_buffer[17] = random(256);
-    pkt_buffer[12] = pkt_buffer[18] = random(256);
-    pkt_buffer[13] = pkt_buffer[19] = random(256);
-    pkt_buffer[14] = pkt_buffer[20] = random(256);
-    pkt_buffer[15] = pkt_buffer[21] = random(256);
+    pkt_buffer[10] = pkt_buffer[16] = 0x24;
+    pkt_buffer[11] = pkt_buffer[17] = 0xa4;
+    pkt_buffer[12] = pkt_buffer[18] = 0x3c;
+    pkt_buffer[13] = pkt_buffer[19] = 0xb1;
+    pkt_buffer[14] = pkt_buffer[20] = 0x35;
+    pkt_buffer[15] = pkt_buffer[21] = 0xf3;
 
     // SSID length
     pkt_buffer[37] = ssid_len;
