@@ -1,0 +1,39 @@
+00C0CA	ALFA, INC.
+08D46A	LG Electronics (Mobile Communications)
+08F4AB	Apple, Inc.
+1C36BB	Apple, Inc.
+38F9D3	Apple, Inc.
+3C286D	Google, Inc.
+3C2EF9	Apple, Inc.
+404E36	HTC Corporation
+484BAA	Apple, Inc.
+4889E7	Intel Corporate
+58CB52	Google, Inc.
+58E28F	Apple, Inc.
+64A2F9	OnePlus Technology (Shenzhen) Co., Ltd
+64A2F9	OnePlus Technology (Shenzhen) Co., Ltd
+784F43	Apple, Inc.
+7C03AB	Xiaomi Communications Co Ltd
+7CD95C	Google, Inc.
+88E9FE	Apple, Inc.
+8C8590	Apple, Inc.
+8CF5A3	SAMSUNG ELECTRO-MECHANICS(THAILAND)
+9CB6D0	Rivet Networks
+A03BE3	Apple, Inc.
+A45E60	Apple, Inc.
+A8DB03	SAMSUNG ELECTRO-MECHANICS(THAILAND)
+AC3743	HTC Corporation
+AC5F3E	SAMSUNG ELECTRO-MECHANICS(THAILAND)
+ACBC32	Apple, Inc.
+B06FE0	Samsung Electronics Co.,Ltd
+C0A53E	Apple, Inc.
+C49880	Apple, Inc.
+CC20E8	Apple, Inc.
+CC2DB7	Apple, Inc.
+DCA904	Apple, Inc.
+E0897E	Apple, Inc.
+F01898	Apple, Inc.
+F40F24	Apple, Inc.
+F45C89	Apple, Inc.
+F86FC1	Apple, Inc.
+F895EA	Apple, Inc.
