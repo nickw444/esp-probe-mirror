@@ -17,3 +17,7 @@ Using these two things, the goal of this project is to look for probe frames fro
 ](http://nomartini-noparty.blogspot.com.au/2016/07/esp8266-and-beacon-frames.html)
 - [ESP8266 WiFi Beacon Generator ](https://gist.github.com/kost/1e1b13d5796a6649f82ec1c08cd0a835)
 - [esp8266_beaconSpam](https://github.com/spacehuhn/esp8266_beaconSpam)
+
+## TODO:
+
+* Show broadcast networks as WPA2 -> See [`esp8266_beaconSpam`](https://github.com/spacehuhn/esp8266_beaconSpam) project

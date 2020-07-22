@@ -50,7 +50,6 @@ void send_beacon_frame(const char * ssid, uint8_t channel) {
     pkt_buffer[sizeof header + ssid_len + sizeof connection_info] = channel;
 
     uint16_t packet_size = sizeof header + ssid_len + sizeof connection_info + 1;
-    wifi_set_channel(channel);
     wifi_send_pkt_freedom(pkt_buffer, packet_size, 0);
     wifi_send_pkt_freedom(pkt_buffer, packet_size, 0);
     wifi_send_pkt_freedom(pkt_buffer, packet_size, 0);
